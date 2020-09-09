@@ -1,221 +1,104 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>CromDiag</title>
+	<head>
+		<meta charset="utf-8">
+		<title>CromDiag</title>
 
-        <!-- css -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/st2.css">
+		<!-- css -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css">
 
-        <!-- Java Script-->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    </head>
+		<!-- Java Script-->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+		
+	</head>
 
-    <body>
-      <header>
-        <!-- NavBar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-          <a href="index.html" class="navbar-brand">CROM DIAG</a>
-  
-          <form class="form-inline" style="padding-left: 10px;">
-            <button class="btn btn-custom" type="button">Contactez nous</button>
-          </form>
-          
-          <div class="btn">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-              </button>
-          </div>
-    
-          <div class="navbar-collapse collapse" id="navbarsExample01">
-              <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Accueil<span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="contact_devis.html">Contact & Devis<span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="presentation.html">Qui sommes nous ?<span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="diags.html">Diagnostics<span class="sr-only">(current)</span></a>
-              </li>
-              </ul>
-          </div>
-        </nav>
-      </header>
+	<!-- Contenu du site -->
+	<body>
+		<script src="js/app.js"></script>
 
-     <!--Carousel Wrapper-->
-<div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+		<header>
+			<!-- NavBar -->
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+				<a href="index.html" class="navbar-brand">CROM DIAG</a>
 
-    <!--Controls-->
-    <div class="controls-top">
-      <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
-      <a class="btn-floating" href="#multi-item-example" data-slide="next"><i
-          class="fas fa-chevron-right"></i></a>
-    </div>
-    <!--/.Controls-->
-  
-    <!--Indicators-->
-    <ol class="carousel-indicators">
-      <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
-      <li data-target="#multi-item-example" data-slide-to="1"></li>
-      <li data-target="#multi-item-example" data-slide-to="2"></li>
-    </ol>
-    <!--/.Indicators-->
-  
-    <!--Slides-->
-    <div class="carousel-inner" role="listbox">
-  
-      <!--First slide-->
-      <div class="carousel-item active">
-  
-        <div class="col-md-4">
-          <div class="card mb-2">
-            <img class="card-img-top"
-              src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
-              alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
-              <a class="btn btn-primary">Button</a>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-md-4">
-          <div class="card mb-2">
-            <img class="card-img-top"
-              src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
-              alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
-              <a class="btn btn-primary">Button</a>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-md-4">
-          <div class="card mb-2">
-            <img class="card-img-top"
-              src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
-              alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
-              <a class="btn btn-primary">Button</a>
-            </div>
-          </div>
-        </div>
-  
-      </div>
-      <!--/.First slide-->
-  
-      <!--Second slide-->
-      <div class="carousel-item">
-  
-        <div class="col-md-4">
-          <div class="card mb-2">
-            <img class="card-img-top"
-              src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
-              <a class="btn btn-primary">Button</a>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-md-4">
-          <div class="card mb-2">
-            <img class="card-img-top"
-              src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg" alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
-              <a class="btn btn-primary">Button</a>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-md-4">
-          <div class="card mb-2">
-            <img class="card-img-top"
-              src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg" alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
-              <a class="btn btn-primary">Button</a>
-            </div>
-          </div>
-        </div>
-  
-      </div>
-      <!--/.Second slide-->
-  
-      <!--Third slide-->
-      <div class="carousel-item">
-  
-        <div class="col-md-4">
-          <div class="card mb-2">
-            <img class="card-img-top"
-              src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg" alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
-              <a class="btn btn-primary">Button</a>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-md-4">
-          <div class="card mb-2">
-            <img class="card-img-top"
-              src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(45).jpg" alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
-              <a class="btn btn-primary">Button</a>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-md-4">
-          <div class="card mb-2">
-            <img class="card-img-top"
-              src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(51).jpg" alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
-              <a class="btn btn-primary">Button</a>
-            </div>
-          </div>
-        </div>
-  
-      </div>
-      <!--/.Third slide-->
-  
-    </div>
-    <!--/.Slides-->
-  
-  </div>
-  <!--/.Carousel Wrapper-->
-    </div>
-    </body>
+				<form class="form-inline" style="padding-left: 10px;">
+					<button class="btn btn-custom" type="button">Contactez nous</button>
+				</form>
+				
+				<div class="btn">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					  </button>
+				</div>
+	
+				<div class="navbar-collapse collapse" id="navbarsExample01">
+					  <ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="index.html">Accueil<span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="contact_devis.html">Contact & Devis<span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="presentation.html">Qui sommes nous ?<span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="diags.html">Diagnostics<span class="sr-only">(current)</span></a>
+						</li>
+					  </ul>
+				</div>
+			</nav>
+		</header>
+		<!-- End NavBar -->
+
+		<main role="main">
+			<!-- Banner -->
+			<section class="container-fluid" style="margin-top: 4%;">
+				<div class="ban">
+					<img src="images/Green_banner2.png" alt="Crom Diag Banner">
+				</div>
+			</section>
+			<!-- End Banner -->
+			 
+			<section>
+				<iframe src="https://www.google.com/maps/d/embed?mid=1m7U-gIB0LYG36MPSTJCod6vp3Po&amp;z=9.5" width="750" height="380"></iframe>
+			</section>
+
+			<!-- Footer -->
+			<section class="container-fluid footer-top">
+				<footer class="container">
+					<div class="row" style="padding-top: 4%;">
+						<div class="col-md-4 col-sm-12 col-xs-12 segment-one">
+							<h2>CROM DIAG</h2>
+							<p>
+								Un texte est une série orale ou écrite de mots perçus comme
+								constituant un ensemble cohérent, porteur de sens et utilisant 
+								les structures propres à une langue (conjugaisons, constructio).
+							</p>
+						</div>
+						<div class="col-md-4 col-sm-12 col-xs-12 segment-three">
+							<h2>RESEAUX</h2>
+								<p>Rejoignez nous sur notre page Facebook et sur Linkedin pour en suivre notre actualite</p>
+								<a href="https://www.facebook.com/Cromdiag13/?ref=page_internal"><i class="fa fa-facebook-official iconFacebook"></i></a>
+								<a href="https://www.linkedin.com/in/christian-romano-618338146"><i class="fa fa-linkedin-square iconLinkedin"></i></a>
+						</div>
+						<div class="col-md-4 col-sm-12 col-xs-12 segment-four">
+							<h2>CONTACT & HORAIRES</h2>
+							<ul>
+								<li><a><i class="fa fa-map-marker" style='font-size:20px; color: white; padding-right:7%;'></i>Région PACA</a></li>
+								<li><a><i class="fa fa-envelope-open" style='font-size:20px; color: white;'></i>cromdiag@gmail.com</a></li>
+								<li><a><i class="fa fa-phone" style='font-size:20px; color: white;'></i> 06.51.45.17.46</a></li>
+								<li><a><i class="fa fa-calendar" style='font-size:20px; color: white;'></i> 7j/7 & 23h/24</a></li>
+							</ul>
+						</div>
+					</div>
+				</footer>
+			</section>
+			<!-- End Footer -->
+		</main>
+	</body>
 </html>

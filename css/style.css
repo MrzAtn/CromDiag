@@ -1,9 +1,13 @@
 /*  Global */
 @charset " UTF-8";
 
-body html {
-    padding: 0;
-    margin: 0;
+/*
+green : #59ac75
+grey-dark : #343b3f
+*/
+
+section {
+    margin-top: 5%;
 }
 
 a, a:hover {
@@ -23,7 +27,6 @@ a {
     font-family: Impact;
     font-size: 2em;
     color: #343b3f;
-    text-decoration: underline;
 }
 
 /* Header style */
@@ -50,7 +53,7 @@ a {
 }
 
 .nav-item a:hover {
-    text-decoration: underline;
+    font-weight: bold;
 }
 
 .navbar .btn-custom {
@@ -101,13 +104,6 @@ ol.breadcrumb li a:hover {
     border-radius: 17px;
 }
 
-#actuCarousel {
-    padding-left: 15%;
-    padding-right: 15%;
-    padding-top: 3%;
-    padding-bottom: 0%;
-}
-
 .carousel-caption {
     padding-top: 0px;
 }
@@ -120,14 +116,12 @@ ol.breadcrumb li a:hover {
 }
 
 /* About style */
-.container {
-    padding-top: 5%;
-}
-
 .about {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    margin-left: 0.1%;
+    margin-right: 0.1%;
 }
 
 .about img {
@@ -139,13 +133,6 @@ ol.breadcrumb li a:hover {
     text-align: justify;
 }
 
-.about h1 {
-    font-family: Impact;
-    font-size: 2em;
-    color: #343b3f;
-    text-decoration: underline;
-}
-
 #presentation {
     border-left: 2px solid #343b3f;
 }
@@ -155,18 +142,18 @@ ol.breadcrumb li a:hover {
 }
 
 /* Main */
+
 .itemDiag {
     display: flex;
     justify-content: space-between;
 }
 
-.card {
-    box-shadow: 6px 6px 6px black;
+.mycard {
+    border-radius: 7%;
 }
 
 .Carousel_2 {
     text-align: center;
-    text-decoration: underline;
     color:  #343b3f;
     padding-top: 5%;
     font-family: Impact;
@@ -174,13 +161,14 @@ ol.breadcrumb li a:hover {
 }
 
 #myCarousel {
-    padding-top: 1%;
+    padding-bottom: 7%;
 }
 
 .card-header {
     font-family: Impact, 'Arial Narrow Bold', sans-serif;
     text-shadow: 1px 1px 2px black;
     color: #ffffff;
+    background-color: transparent;
 }
 
 /* client */
@@ -329,12 +317,12 @@ transform:scale(1.5);
     padding: 20px;
 }
 
-.expert img {
-    box-shadow: 0px 0px 3px 3px #7e7e7e;
-}
-
 h2 {
     font-family: Arial, Helvetica, sans-serif;;
     font-size: 1.5em;
     color: #343b3f;
 }
+
+
+/* ################ Contact & Devis ################ */
+
