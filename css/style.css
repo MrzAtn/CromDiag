@@ -101,6 +101,13 @@ ol.breadcrumb li a:hover {
     border-radius: 17px;
 }
 
+#actuCarousel {
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 3%;
+    padding-bottom: 0%;
+}
+
 .carousel-caption {
     padding-top: 0px;
 }
@@ -277,6 +284,25 @@ transform:scale(1.5);
     padding-top: 5px;
 }
 
+.iconFacebook {
+    font-size:30px; 
+    color: white;
+}
+
+.iconFacebook:hover{ 
+    color: #3b5998;
+}
+
+.iconLinkedin {
+    font-size:30px; 
+    color: white;
+}
+
+.iconLinkedin:hover{ 
+    color: #007ebb;
+}
+
+
 /* intro */
 
 .intro {
@@ -299,6 +325,16 @@ transform:scale(1.5);
 /* ################ Presentation ################ */
 
 .nous {
-    box-shadow: 0px 0px 4px 4px #7e7e7e;
+    box-shadow: 0px 0px 3px 3px #7e7e7e;
     padding: 20px;
+}
+
+.expert img {
+    box-shadow: 0px 0px 3px 3px #7e7e7e;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;;
+    font-size: 1.5em;
+    color: #343b3f;
 }
