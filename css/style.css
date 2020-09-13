@@ -23,6 +23,11 @@ a {
     padding: 0px;
 }
 
+.container {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 .title {
     font-family: Impact;
     font-size: 2em;
@@ -32,7 +37,7 @@ a {
 /* Header style */
 
 .btn {
-    text-align: right;
+    text-align: center;
 }
 
 .navbar-brand {
@@ -125,8 +130,8 @@ ol.breadcrumb li a:hover {
 }
 
 .about img {
-    width: 390px;
-    height: 320px;
+    width: 320px;
+    height: 250px;
 }
 
 .container p{
@@ -134,11 +139,11 @@ ol.breadcrumb li a:hover {
 }
 
 #presentation {
-    border-left: 2px solid #343b3f;
+    border-left: 1px solid #343b3f;
 }
 
 #information {
-    border-right: 2px solid #343b3f;
+    border-right: 1px solid #343b3f;
 }
 
 /* Main */
@@ -179,37 +184,50 @@ ol.breadcrumb li a:hover {
 
 }
 
-.client {
-    padding-bottom: 5%;
-}
-
-.comment {
-    box-shadow: 2% black;
-}
-
-
 .image {
-width: 100%;
-height: 100%;
+    width: 15%;
+    height: 15%;
 }
 
+.btn-logo img{
+    width: 15%;
+    height: 15%;
+    margin-left: 15%;
+}
+
+.btn-logo {
+    display: flex;
+    align-items: center;
+    border: solid 1px #343b3f;
+    color: #ffffff;
+    border-radius: 30px;
+    width: 70%;
+}
+
+.btn-logo:hover {
+    color: #343b3f;
+}
+
+/**
 .image {
-/* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
--webkit-transition: all 1s ease; /* Safari et Chrome */
--moz-transition: all 1s ease; /* Firefox */
--ms-transition: all 1s ease; /* Internet Explorer 9 */
--o-transition: all 1s ease; /* Opera */
+
+-webkit-transition: all 1s ease;
+-moz-transition: all 1s ease; 
+-ms-transition: all 1s ease; 
+-o-transition: all 1s ease; 
 transition: all 1s ease;
 }
 
+
 .image:hover{
-/* L'image est grossie de 25% */
--webkit-transform:scale(1.5); /* Safari et Chrome */
--moz-transform:scale(1.5); /* Firefox */
--ms-transform:scale(1.5); /* Internet Explorer 9 */
--o-transform:scale(1.5); /* Opera */
+-webkit-transform:scale(1.5);
+-moz-transform:scale(1.5); 
+-ms-transform:scale(1.5); 
+-o-transform:scale(1.5); 
 transform:scale(1.5);
 }
+*/
+
 
 /* Footer style */
 .footer-top {
