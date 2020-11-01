@@ -7,19 +7,19 @@
 		<!-- css -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style_carousel.css">
 		<link rel="stylesheet" href="css/style.css">
+		
 		
 	</head>
 
 	<!-- Contenu du site -->
 	<body>
-		<script src="js/app.js"></script>
-
 		<header class="header">
             <!-- LOGO menu de navigation -->
-            <a href="index.html" class="header_logo"><img src="/Users/antonin/Documents/Prog/Prog_web/CromDiag/images/logo.png" alt="CromDiag logo"></a>
+            <a href="index.html" class="header_logo"><img src="images/logo.png" alt="CromDiag logo"></a>
             <!-- Bouton pour magnat  -->
-            <button type="button">Contactez nous</button>
+            <button type="button" data-toggle="modal" data-target="#contactModal">Contactez nous</button>
             <!-- Barre de navigation -->
             <nav class="menu">  
                 <a href="index.html" style="margin-top: 23%;">Accueil</a>
@@ -30,7 +30,29 @@
             <!-- Bouton hamburger -->
             <div class="header_button">
                 <span></span>
-            </div>
+			</div>
+			
+			<!-- Modal -->
+			<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">Contactez nous</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					</div>
+					<div class="modal-body">
+					...
+					</div>
+					<div class="modal-footer">
+					<button type="button" class="btn" data-dismiss="modal" style="background-color: #343b3f; color:#fff">Close</button>
+					<a href="contact_devis.html" class="btn" style="background-color: #59ac75;">Formulaire de contact</a>
+					</div>
+				</div>
+				</div>
+			</div>
+			<!-- End Modal -->
         </header>
 		<!-- End NavBar -->
 
@@ -109,7 +131,7 @@
 			<section class="container-fluid">
 				<div class="container">
 					<div class="row about" id='information'>
-						<div class="d-none d-lg-block about">
+						<div class="about">
 							<img src="images/info_Diag.png" alt="Logo CromDiag">
 						</div>
 						<div class="col-md-12 col-lg-6 col-xs-12 col-sm-12">
@@ -128,117 +150,82 @@
 
 			<!-- Carousel 2 -->
 			<section class="container-fluid" style="background-color: #59ac75;">
-				<div class="container">
-					<h1 class="Carousel_2">Nos Diagnostics</h1>
-					<div id="myCarousel" class="carousel slide container" data-ride="carousel">
-						<div class="carousel-inner" role="listbox">
-							<div class="carousel-item active">
-								<div class="col-md-3 col-sm-4" style="float:left;">
-									<div class="mycard text-white mb-3" style="background-color: #E21421;">
-										<div class="card-header" style="padding-bottom: 0%;">
-											<p style="text-align: center;">M.C.A (AMIANTE)<i class="fa fa-font" style="font-size:20px; float:right;"></i></p>
-										</div>
-										<div class="card-body" style="overflow: hidden;">
-											<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-											<a href="diags.html#mca" class="btn" style="color:#343b3f; background-color: white;">En savoir plus</a>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-3 col-sm-4" style="float:left;">
-									<div class="mycard text-white mb-3" style="background-color: #0E99CA;">
-										<div class="card-header" style="padding-bottom: 0%;">
-											<p style="text-align: center;">D.P.E (ENERGETIQUE)<i class="fa fa-dashboard" style="font-size:20px; float:right;"></i></p>
-										</div>
-										<div class="card-body" style="overflow: hidden;">
-												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-												<a href="diags.html#dpe" class="btn" style="color:#343b3f; background-color: white;">En savoir plus</a>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-3 col-sm-4" style="float:left;">
-									<div class="mycard text-white mb-3" style="background-color: #9A1B25;">
-										<div class="card-header" style="padding-bottom: 0%;">
-											<p style="text-align: center;">C.R.E.P (PLOMB)<i class="fa fa-tint" style="font-size:20px; float:right;"></i></p>
-										</div>
-										<div class="card-body" style="overflow: hidden;">
-												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-												<a href="diags.html#crep" class="btn" style="color:#343b3f; background-color: white;">En savoir plus</a>
-										</div>
-									</div>
-								</div>	
-								<div class="col-md-3 col-sm-4" style="float:left;">
-									<div class="mycard text-white mb-3" style="background-color: #199B3C;">
-										<div class="card-header" style="padding-bottom: 0%;">
-											<p style="text-align: center;">E.R.N.M.T (POLLUTION) <i class="fa fa-industry" style="font-size:20px; float:right;"></i></p>
-										</div>
-										<div class="card-body" style="overflow: hidden;">
-												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-												<a href="diags.html#ernmt" class="btn" style="color:#343b3f; background-color: white;">En savoir plus</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!--First slide-->
-						
-							<!--Second slide-->
-							<div class="carousel-item">
-								<div class="col-md-3 col-sm-4" style="float:left;">
-									<div class="mycard text-white mb-3" style="background-color: #DF720A;">
-										<div class="card-header" style="padding-bottom: 0%;">
-											<p style="text-align: center;">GAZ <i class="fa fa-fire" style="font-size:20px; float:right;"></i></p>
-										</div>
-										<div class="card-body" style="overflow: hidden;">
-											<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-											<a href="diags.html#gaz" class="btn" style="color:#343b3f; background-color: white;">En savoir plus</a>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-3 col-sm-4" style="float:left;">
-									<div class="mycard text-white mb-3" style="background-color: #1241AD;">
-										<div class="card-header" style="padding-bottom: 0%;">
-											<p style="text-align: center;">TERMITES <i class="fa fa-bug" style="font-size:20px; float:right;"></i></p>
-										</div>
-										<div class="card-body" style="overflow: hidden;">
-												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-												<a href="diags.html#termites" class="btn" style="color:#343b3f; background-color: white;">En savoir plus</a>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-3 col-sm-4" style="float:left;">
-									<div class="mycard text-white mb-3" style="background-color: #F5CB11;">
-										<div class="card-header" style="padding-bottom: 0%;">
-											<p style="text-align: center;">ELEC <i class="fa fa-flash" style="font-size:20px; float:right;"></i></p>
-										</div>
-										<div class="card-body" style="overflow: hidden;">
-											<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-											<a href="diags.html#electricite" class="btn" style="color:#343b3f; background-color: white;">En savoir plus</a>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-3 col-sm-4" style="float:left;">
-									<div class="mycard text-white mb-3" style="background-color: #75179E;">
-										<div class="card-header" style="padding-bottom: 0%;">
-											<p style="text-align: center;">CARREZ / BOUTIN <i class="fa fa-home" style="font-size:20px; float:right;"></i></p>
-										</div>
-										<div class="card-body" style="overflow: hidden;">
-											<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-											<a href="diags.html#carrez" class="btn" style="color:#343b3f; background-color: white;">En savoir plus</a>
-										</div>
-									</div>
-								</div>
-							</div>
+				<h1 class="Carousel_2">Nos Diagnostics</h1>
+				<div id="carousel_Cards">
+					<div class="item" style="background-color: red;">
+						<div class="card_header">
+							<p>M.C.A (AMIANTE)<i class="fa fa-dashboard" style="font-size:20px; float:right;"></i></p>
 						</div>
-						<div class="nav_carousel">
-							<a href="#myCarousel" role="button" data-slide="prev" id="left_bt">
-								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-							</a>
-							<a href="#myCarousel" role="button" data-slide="next" id="right_bt">
-								<span class="carousel-control-next-icon" aria-hidden="true"></span>
-							</a>
+						<div class="card_body">
+							<p class="card_text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							<a href="diags.html#mca" class="btn_card">En savoir plus</a>
 						</div>
-						
+					</div>
+					<div class="item" style="background-color: #0E99CA;">
+						<div class="card_header">
+							<p>D.P.E (ENERGETIQUE)<i class="fa fa-dashboard" style="font-size:20px; float:right;"></i></p>
+						</div>
+						<div class="card_body">
+							<p class="card_text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							<a href="diags.html#mca" class="btn_card">En savoir plus</a>
+						</div>
+					</div>
+					<div class="item" style="background-color: #9A1B25;">
+						<div class="card_header">
+							<p>C.R.E.P (PLOMB)<i class="fa fa-tint" style="font-size:20px; float:right;"></i></p>
+						</div>
+						<div class="card_body">
+							<p class="card_text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							<a href="diags.html#mca" class="btn_card">En savoir plus</a>
+						</div>
+					</div>
+					<div class="item" style="background-color: #199B3C;">
+						<div class="card_header">
+							<p>E.R.N.M.T (POLLUTION) <i class="fa fa-industry" style="font-size:20px; float:right;"></i></p>
+						</div>
+						<div class="card_body">
+							<p class="card_text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							<a href="diags.html#mca" class="btn_card">En savoir plus</a>
+						</div>
+					</div>
+					<div class="item" style="background-color: #DF720A;">
+						<div class="card_header">
+							<p>GAZ <i class="fa fa-fire" style="font-size:20px; float:right;"></i></p>
+						</div>
+						<div class="card_body">
+							<p class="card_text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							<a href="diags.html#mca" class="btn_card">En savoir plus</a>
+						</div>
+					</div>
+					<div class="item" style="background-color: #1241AD;">
+						<div class="card_header">
+							<p>TERMITES <i class="fa fa-bug" style="font-size:20px; float:right;"></i></p>
+						</div>
+						<div class="card_body">
+							<p class="card_text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							<a href="diags.html#mca" class="btn_card">En savoir plus</a>
+						</div>
+					</div>
+					<div class="item" style="background-color: #F5CB11;">
+						<div class="card_header">
+							<p>ELEC <i class="fa fa-flash" style="font-size:20px; float:right;"></i></p>
+						</div>
+						<div class="card_body">
+							<p class="card_text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							<a href="diags.html#mca" class="btn_card">En savoir plus</a>
+						</div>
+					</div>
+					<div class="item" style="background-color: #75179E;">
+						<div class="card_header">
+							<p>CARREZ / BOUTIN <i class="fa fa-home" style="font-size:20px; float:right;"></i></p>
+						</div>
+						<div class="card_body">
+							<p class="card_text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							<a href="diags.html#mca" class="btn_card">En savoir plus</a>
+						</div>
 					</div>
 				</div>
+	
 			</section>
 			<!-- End Carousel 2 -->
 			
@@ -250,8 +237,8 @@
 							<h1 class="title"> Retour client </h1>
 							<p><em>"Chez CromDiag, notre objectif est de satisfaire pleinement notre clientele. Nous faisons de 
 								l'adaptabilite et de la performance des points essentiels lors de nos prestations."</em><hr>Je vous invite a consulter nos avis clients sur les plateformes suivantes:</p>
-							<div style="justify-content: center;">
-								<ul style="list-style: none;">
+							<div>
+								<ul class="linkToOther" style="list-style: none;">
 									<li><a href="https://www.google.com/search?q=crom+diag&oq=crom&aqs=chrome.2.69i60j69i57j69i59j69i60l2.2016j0j1&sourceid=chrome&ie=UTF-8#lrd=0x12c9992c48148937:0x93db7030951b2d19,1,,," class="row btn-logo" id="gb_logo">My Business<img src="images/GB_logo.png" alt="Google business CromDiag" class="image"></a></li>
 									<li style="padding-top: 3%;"><a href="https://www.pagesjaunes.fr/pros/59185642" class="row btn-logo" id="pj_logo">Pages jaunes<img src="images/PJ_logo.png" alt="Page jaune CromDiag" class="image"></a></li>
 								</ul>
@@ -308,7 +295,8 @@
 	</body>
 	<!-- Java Script-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="/Users/antonin/Documents/Prog/Prog_web/CromDiag/js/app.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/carousel.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </html>

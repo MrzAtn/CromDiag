@@ -10,6 +10,7 @@ class Carousel {
     constructor(element, options = {}){
         this.element = element
         this.options = options
+        this.isMiddle = false
         this.isMobile = false /* variable pour déterminer si on est sur mobile et adapter la taille des cards*/
         let children = [].slice.call(element.children)
         this.currentItem = 0
@@ -54,10 +55,12 @@ class Carousel {
      * Fonction permettant de créer les boutons de navigation du carousel
      */
     createNavigation (){
+        let divButton = this.createDivWithClass('control_Carousel')
         let nextButton = this.createDivWithClass('carousel_Next')
         let prevButton = this.createDivWithClass('carousel_Prev')
-        this.root.appendChild(nextButton)
-        this.root.appendChild(prevButton)
+        this.root.appendChild(divButton)
+        divButton.appendChild(nextButton)
+        divButton.appendChild(prevButton)
         nextButton.addEventListener('click', this.next.bind(this))
         prevButton.addEventListener('click', this.prev.bind(this))
     }
@@ -118,10 +121,15 @@ class Carousel {
      * 
      */
     omWindowResize(){
-        let mobile = window.innerWidth < 1200
+        let middle = window.innerWidth < 1130
+        let mobile = window.innerWidth < 850
         if (mobile !== this.isMobile){
             this.isMobile = mobile
-            this.setStyle()    
+            this.setStyle()
+            middle = false
+        }else if (middle !== this.isMiddle){
+            this.isMiddle = middle
+            this.setStyle()
         }
     }
 
@@ -136,14 +144,20 @@ class Carousel {
      * @returns {number} nomde de slide a afficher par frame
      */
     get slideVisible(){
-        return this.isMobile ? 1 : this.options.slideVisible
+        if (this.isMobile){
+            return 2
+        }else if (this.isMiddle){
+            return 3
+        }else{
+            return this.options.slideVisible
+        }
     }
 }
 
 document.addEventListener("DOMContentLoaded", function() {
     new Carousel(document.querySelector("#carousel_Cards"), {
         slidesToScroll:1, 
-        slideVisible:3, 
+        slideVisible:4, 
         infinite: true
     })
 })

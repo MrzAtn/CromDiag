@@ -44,7 +44,6 @@ section {
     width: 165px;
     height: 90px;
     padding: 0 25px;
-    float: right;
 }
 
 .header button {
@@ -159,7 +158,10 @@ section {
     #top_section {
         padding-top: 10px;
     }
-        
+
+    .about img {
+        margin-left: 30%;
+    }
 }
 
 /* A modifier */
@@ -288,6 +290,12 @@ section {
 .image {
     width: 15%;
     height: 15%;
+}
+
+.linkToOther {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5% 0% 1.5% 4%;
 }
 
 .btn-logo img{

@@ -4,23 +4,6 @@
 green : #59ac75
 grey-dark : #343b3f
 */
-/* GENERAL */ 
-html, body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Helvetica';
-    min-height: 100%;
-}
-
-body {
-    padding: 50px;
-}
-
-.container {
-    padding-top: 100px;
-    margin-right: 100px;
-    margin-left: 100px;
-}
 
 /* CARD STYLE */
 
@@ -77,6 +60,7 @@ body {
 /* CAROUSEL */
 .carousel {
     position: relative;
+    overflow: hidden;
 }
 
 .carousel_container {
@@ -94,25 +78,25 @@ body {
     float: left;
 }
 
+.control_Carousel {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-left: 45%;
+    margin-right: 45%;
+    margin-bottom: 1%
+}
+
 .carousel_Next,.carousel_Prev {
-    position: absolute;
+    position: relative;
+    margin: auto;
     width: 30px;
     height: 30px;
     border-radius: 50%;
     background-color: #343b3f;
-    bottom: -10%;
-    margin-top: -20px;
-    right: 40%;
     transition: tranform 0.4s;
     cursor: pointer;
 }
 
 .carousel_Next:hover,.carousel_Prev:hover {
     transform: scale(1.2);
-}
-
-.carousel_Prev {
-    right: auto;
-    left: 40%;
-    
 }

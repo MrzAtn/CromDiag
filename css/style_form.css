@@ -11,7 +11,7 @@
     box-shadow: 0px 0px 2px 2px #343b3f;
     display: flex;
     flex-direction: column;
-    background-color: #E6E5E7 ;
+    background-color: #f2f2f2;
     padding: 2%;
 }
 
@@ -96,9 +96,5 @@
 @media only screen and (max-width: 950px){
     #top_section {
         padding-top: 0;
-    }
-
-    .container_form {
-        /* ajouter les margin pour le mini écran*/
     }
 }
