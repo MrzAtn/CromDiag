@@ -242,8 +242,8 @@ section {
 .Carousel_2 {
     text-align: center;
     color:  #343b3f;
-    padding-top: 5%;
-    font-family: Impact;
+    padding-top: 1%;
+    font-family: Helvetica;
     font-size: 2em;
 }
 
@@ -418,7 +418,7 @@ section {
 /* ################ Presentation ################ */
 
 .nous {
-    box-shadow: 0px 0px 3px 3px #7e7e7e;
+    box-shadow: 0px 0px 2px 1px #343b3f;
     padding: 20px;
 }
 

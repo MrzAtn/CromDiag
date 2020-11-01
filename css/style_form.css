@@ -8,7 +8,7 @@
 }
 
 .container_form {
-    box-shadow: 0px 0px 2px 2px #343b3f;
+    box-shadow: 0px 0px 2px 1px #343b3f;
     display: flex;
     flex-direction: column;
     background-color: #f2f2f2;
@@ -24,7 +24,7 @@
 .element_form input {
     border-radius: 5px;
     border: solid 1px #343b3f;
-    height: 20px;
+    height: 30px;
     border-color: #343b3f;
     font-family: 'Helvetica';
 }
@@ -40,6 +40,7 @@
 
 .element_form select {
     border-radius: 5px;
+    height: 30px;
     border: solid 1px #343b3f;
     border-color: #343b3f;
     font-family: 'Helvetica';
@@ -89,8 +90,16 @@
 
 .btn_form {
     background-color: #59ac75;
+    border: 1px solid #343b3f;
     color: #343b3f;
     border-radius: 5px;
+    padding: 1% 5% 1% 5%;
+}
+
+.btn_form:hover {
+    background-color: #343b3f;
+    border: 2px inset #59ac75;
+    color: #59ac75;
 }
 
 @media only screen and (max-width: 950px){

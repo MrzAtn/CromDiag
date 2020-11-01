@@ -31,31 +31,31 @@
             <div class="header_button">
                 <span></span>
 			</div>
-			
-			<!-- Modal -->
-			<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-hidden="true">
-				<div class="modal-dialog modal-dialog-centered" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLongTitle">Contactez nous</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-					</div>
-					<div class="modal-body">
-					...
-					</div>
-					<div class="modal-footer">
-					<button type="button" class="btn" data-dismiss="modal" style="background-color: #343b3f; color:#fff">Close</button>
-					<a href="contact_devis.html" class="btn" style="background-color: #59ac75;">Formulaire de contact</a>
-					</div>
-				</div>
-				</div>
-			</div>
-			<!-- End Modal -->
 		</header>
 		<!-- End NavBar -->
 
+		<!-- Modal -->
+		<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLongTitle">Contactez nous</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				</div>
+				<div class="modal-body">
+				...
+				</div>
+				<div class="modal-footer">
+				<button type="button" class="btn" data-dismiss="modal" style="background-color: #343b3f; color:#fff">Close</button>
+				<a href="contact_devis.html" class="btn" style="background-color: #59ac75;">Formulaire de contact</a>
+				</div>
+			</div>
+			</div>
+		</div>
+		<!-- End Modal -->
+		
 		<main role="main">
 			<section class="container-fluid" id="top_section">
 				<div class="container">
@@ -126,10 +126,15 @@
 								</div>
 								<div class="sub_element_form" id="type">
 									<label for="">Type du Bien</label>  <br>
-									<input type="radio" name="type" value="Appartement" id="Appartement">
-									<label for="Appartement" style="font-size:1em">Appartement</label><br>
-									<input type="radio" name="type" value="Maison" id="Maison">
-									<label for="Maison" style="font-size:1em">Maison</label>
+									<div style="display: flex; padding-right: 2%;">
+										<input type="radio" name="type" value="Appartement" id="Appartement" style="margin-right: 5%;">
+										<label for="Appartement" style="font-size:1em">Appartement</label><br>
+									</div>
+									<div style="display: flex">
+										<input type="radio" name="type" value="Maison" id="Maison" style="margin-right: 5%;">
+										<label for="Maison" style="font-size:1em">Maison</label>
+									</div>
+									
 								</div>
 							</div>
 			
@@ -137,7 +142,7 @@
 							<div class="element_form">
 								<div class="sub_element_form">  
 									<label for="message">Message</label><br />
-									<textarea name="message" id="message" placeholder="Precisez votre demande"></textarea>
+									<textarea name="message" id="message" placeholder="Précisez votre demande"></textarea>
 								</div>
 							</div>
 							<div class="element_form">

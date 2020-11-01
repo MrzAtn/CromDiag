@@ -5,11 +5,15 @@ green : #59ac75
 grey-dark : #343b3f
 */
 
-/* CARD STYLE */
+/* GENERAL */
+h3 {
+    font-size: 1.3em;
+}
 
+/* CARD STYLE */
 .item {
     position: relative;
-    border-radius: 12px;
+    border-radius: 0.25rem;
     width: 270px;
     background-color: #999;
     margin: 40px 10px;
@@ -22,17 +26,20 @@ grey-dark : #343b3f
 } 
 
 .card_header {
-    border-bottom: solid 1px #726f6f;
+    border-bottom: solid 1px #343b3f;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     font: 1.1em Impact;
     color: #fff;
     text-shadow: 1px 1px 3px #343b3f;
+    padding: 5%;
 }
 
 .card_body {
-    margin-left: 7%;
-    margin-right: 7%;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .card_text {
@@ -53,8 +60,15 @@ grey-dark : #343b3f
     line-height: 1.5;
 	border-radius: .25rem;
 	border:1px solid #ccc;
-    box-shadow:1px 1px 3px #999;
+    box-shadow: 0px 3px 3px 0px #343b3f;
     margin-block-end: 10%;
+}
+
+.btn_card:hover {
+    text-decoration: none;
+    color:#59ac75;
+    background-color: #343b3f;
+    border:1px solid #59ac75;
 }
 
 /* CAROUSEL */
