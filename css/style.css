@@ -44,20 +44,26 @@ section {
     width: 165px;
     height: 90px;
     padding: 0 25px;
-    float: left;
+    float: right;
 }
 
 .header button {
     height: 40px;
-    line-height: 40px;
+    line-height: 35px;
     cursor: pointer;
     margin-right: 20px;
     border-radius: 5px;
-    border: none;
-    background-color: #59ac75;
-    color: #343b3f;
+    background-color: #343b3f;
+    color: #59ac75;
+    border: solid 1px #59ac75;
     font-size: 1.1em;
     font-family: 'Helvetica';
+}
+
+.header button:hover {
+    color: #ec8130;
+    border: solid 1px #ec8130;
+
 }
 
 /* NAV */
@@ -71,7 +77,9 @@ section {
     text-decoration: none;
 }
 
-
+#top_section {
+    padding-top: 110px;
+}
 
 /* RESPONSIVE */
 @media only screen and (max-width: 950px){
@@ -127,18 +135,18 @@ section {
 
     .menu {
         position: absolute;
-        z-index: 11;
+        z-index: 2;
         left: 0;
         top: 0;
         bottom: 0;
         width: 250px;
-        background-color: #30373a; /* légèrement plus sombre */
+        background-color: #30373a; /* gris légèrement plus sombre */
         transform: translateX(-250px);
         transition: transform 0.3s;
     }
 
     .menu a {
-        display: block;
+        display: block; /*permet de faire aller à la ligne chaque rubrique*/
         height: 40px;
         text-align: center;
         line-height: 40px;
@@ -147,6 +155,10 @@ section {
     }
 
     .with_sideBar .menu {transform: translateX(0px);}
+
+    #top_section {
+        padding-top: 10px;
+    }
         
 }
 
@@ -296,6 +308,19 @@ section {
 
 .btn-logo:hover {
     color: #343b3f;
+    text-decoration: none;
+}
+
+#pj_logo {
+    background-color: #fef00e; 
+    display: flex; 
+    justify-content: center;
+}
+
+#gb_logo {
+    background-color: #447fe4;
+    display: flex; 
+    justify-content: center;
 }
 
 /* Footer style */
