@@ -417,9 +417,8 @@ section {
 
 /* ################ Presentation ################ */
 
-.nous {
-    box-shadow: 0px 0px 2px 1px #343b3f;
-    padding: 20px;
+.nous p{
+    text: justify;
 }
 
 h2 {

@@ -154,17 +154,45 @@
 // }
 // ==================================================================================// 
 // =================================EXERCICE 4=======================================//
-function createSimpleNode(nameElement, attributs, contenu){
-    var node = document.createElement(nameElement);
-    if(contenu){
-        node.textContent = contenu;
-    }
-    for(var i in attributs){
-        node.setAttribute(i, attributs[i]);
-    }
-    return node;
-}
+//     /*
+//         Fonction permettant de créer un élément HTML plus rapidement 
+//         que lorqu'on doit paramètrer ses attributs à la main
+//     */
+// function createSimpleNode(nameElement, attributs, contenu){
+//     var node = document.createElement(nameElement);
+//     if(contenu){
+//         node.textContent = contenu;
+//     }
+//     for(var i in attributs){
+//         node.setAttribute(i, attributs[i]);
+//     }
+//     return node;
+// }
 
-var aaa = createSimpleNode('div', {id:'testID', text:"BlaBlaBlaBla"});
-var mainDiv = document.getElementById('container');
-mainDiv.appendChild(aaa);
+// var aaa = createSimpleNode('div', {id:'testID', text:"BlaBlaBlaBla"});
+// var mainDiv = document.getElementById('container');
+// mainDiv.appendChild(aaa);
+// ==================================================================================// 
+    /* 
+        Déclenchement d'un évènement à l'aide d'un clique via l'utilisation
+        du DOM-0.
+    */
+// var element = document.getElementById('clickme');
+// element.onclick = function(){
+//     alert("Vous m'avez cliqué");
+//     return false;
+// };
+
+    /* 
+        Déclenchement d'un évènement à l'aide d'un clique via l'utilisation
+        du DOM-2.
+    */
+var element = document.getElementById('clickme');
+
+element.addEventListener('click', function(){
+    alert("Vous m'avez cliqué !");
+});
+
+element.addEventListener('click', function(){
+    alert("Et de 2");
+});
