@@ -396,7 +396,7 @@ section {
 }
 
 
-/* intro */
+/* DIAGNOSTICS */
 
 .intro {
     display: flex;
@@ -404,19 +404,82 @@ section {
     align-items: center;
 }
 
-.intro img {
-    border-bottom: 3px #000000 inset;
+/* DIAGNOSTICS CARD STYLE */
+.diag_item {
+    position: relative;
+    width: 100%;
+    border-radius: 0.25rem;
+    margin-bottom: 5%;
+}
+
+.diag_card_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font: 1.1em Impact;
+    color: #fff;
+    padding: 1%;
+}
+
+.diag_card_body {
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.diag_card_text {
+    text-align: justify;
+    color: #fff;
+    line-height: 1.5;
+    padding-bottom: 5%;
 }
 /* ################ Presentation ################ */
 
-.nous p{
-    text: justify;
+.nous {
+    text-align: justify;
 }
 
 h2 {
     font-family: 'Helvetica', sans-serif;
     font-size: 1.5em;
     color: #343b3f;
+}
+
+.btn_orpi, .btn_nesten, .btn_mdiag {
+    padding: 3%;
+    border: 1px solid #343b3f;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    background: #FFF;
+    color: #343b3f;
+    transition-property: background;
+    transition-duration: .5s;
+    position: relative;
+    margin: auto;
+}
+
+.btn_orpi:hover {
+    text-decoration: none;
+    background: #d7182a;
+    color: #343b3f; 
+}
+
+.btn_nesten:hover {
+    text-decoration: none;
+    background: #00afbe;
+    color: #343b3f; 
+}
+
+.btn_mdiag:hover {
+    text-decoration: none;
+    background: #f7f7f7;
+    color: #343b3f; 
+}
+
+.partenairesConteneur{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 

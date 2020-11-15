@@ -29,10 +29,6 @@
     font-family: 'Helvetica';
 }
 
-.element_form input:active, input::selection {
-    outline-color: #59ac75;
-}
-
 .element_form textarea {
     border-radius: 5px;
     border: solid 0px;
