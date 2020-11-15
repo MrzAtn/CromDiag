@@ -407,14 +407,6 @@ section {
 .intro img {
     border-bottom: 3px #000000 inset;
 }
-
-.intro h1 {
-    font-family: 'Helvetica';
-    font-size: 2em;
-    color: #343b3f;
-    text-decoration: underline;
-}
-
 /* ################ Presentation ################ */
 
 .nous p{

@@ -10,7 +10,7 @@
 .container_form {
     display: flex;
     flex-direction: column;
-    background-color: #f2f2f2;
+    background-color: #FFF;
     border-top: solid 2px #59ac75;
     padding: 2%;
 }
@@ -24,15 +24,19 @@
 .element_form input {
     border-radius: 5px;
     border: solid 0px;
-    border-left: solid 1.7px #59ac75;
+    border: solid 1.7px #59ac75;
     height: 30px;
     font-family: 'Helvetica';
+}
+
+.element_form input:active, input::selection {
+    outline-color: #59ac75;
 }
 
 .element_form textarea {
     border-radius: 5px;
     border: solid 0px;
-    border-left: solid 1.7px #59ac75;
+    border: solid 1.7px #59ac75;
     width: 100%;
     height: 190px;
     font-family: 'Helvetica';
@@ -42,7 +46,7 @@
     border-radius: 5px;
     height: 30px;
     border: solid 0px;
-    border-left: solid 1.7px #59ac75;
+    border: solid 1.7px #59ac75;
     font-family: 'Helvetica';
 }
 
